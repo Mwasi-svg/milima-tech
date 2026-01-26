@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Mwasi-svg/milima-tech/issues"
   },
-  "homepage": "https://github.com/Mwasi-svg/milima-tech#readme"
+  "homepage": "https://github.com/Mwasi-svg/milima-tech#readme",
+  "dependencies": {
+    "emailjs-com": "^3.2.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  }
 }
