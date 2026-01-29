@@ -1,18 +1,18 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Icon } from '../Icon';
-import { InstantMessagingAnimation, EncryptionAnimation, MobileAppAnimation } from './HeroAnimations';
+import { Icon } from './Icon';
+import { InstantMessagingAnimation, MobileAppAnimation } from './HeroAnimations';
 
 export const Hero = () => {
     const [activeSlide, setActiveSlide] = useState(0);
     const slides = [
         {
-            id: 1,
-            tag: "Real-time Messaging",
-            title: "Messaging at blitz \nspeed.",
-            description: "Low latency communication for teams that move fast.",
-            visual: "speed",
-            color: "bg-blue-500"
+            id: 3,
+            tag: "On-hands protection",
+            title: "Mobile App \nProtection.",
+            description: "Protect your data with passcodes, biometrics, and more.",
+            visual: "mobile",
+            color: "bg-cyan-500"
         },
         {
             id: 2,
@@ -23,12 +23,12 @@ export const Hero = () => {
             color: "bg-indigo-500"
         },
         {
-            id: 3,
-            tag: "On-hands protection",
-            title: "Mobile App \nProtection.",
-            description: "Protect your data with passcodes, biometrics, and more.",
-            visual: "mobile",
-            color: "bg-cyan-500"
+            id: 1,
+            tag: "Real-time Messaging",
+            title: "Messaging at blitz \nspeed.",
+            description: "Low latency communication for teams that move fast.",
+            visual: "speed",
+            color: "bg-blue-500"
         }
     ];
 
@@ -163,6 +163,14 @@ export const Hero = () => {
                         >
                             {slides[activeSlide].visual === 'mobile' ? (
                                 <MobileAppAnimation key={activeSlide} />
+                            ) : slides[activeSlide].visual === 'security' ? (
+                                <div className="relative w-full h-full flex items-center justify-center p-4">
+                                    <img
+                                        src="/privacy.png"
+                                        alt="Privacy Protection"
+                                        className="w-full max-w-4xl aspect-square object-contain scale-125 lg:scale-150 transition-transform duration-700"
+                                    />
+                                </div>
                             ) : (
                                 <div className="relative w-full max-w-md aspect-[3/4] lg:aspect-square bg-[#0E1623] rounded-3xl border border-white/10 shadow-2xl overflow-hidden flex flex-col ring-1 ring-white/5">
                                     {/* Mockup Header */}
@@ -180,11 +188,6 @@ export const Hero = () => {
                                         {/* Slide 1: Instant Messaging Animation */}
                                         {slides[activeSlide].visual === 'speed' && (
                                             <InstantMessagingAnimation key={activeSlide} />
-                                        )}
-
-                                        {/* Slide 2: Security (Shield & Lock) */}
-                                        {slides[activeSlide].visual === 'security' && (
-                                            <EncryptionAnimation key={activeSlide} />
                                         )}
                                     </div>
                                 </div>

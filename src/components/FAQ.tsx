@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Icon } from './Icon';
+import { ContactModal } from './ContactModal';
 
 interface FAQItem {
     question: string;
@@ -130,6 +131,8 @@ export const FAQ = () => {
         setOpenItems(prev => ({ ...prev, [key]: !prev[key] }));
     };
 
+    const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+
     return (
         <section className="py-32 px-6 bg-blitz-bg relative overflow-hidden">
             {/* Background Effects */}
@@ -202,15 +205,20 @@ export const FAQ = () => {
                     <p className="text-slate-400 mb-6">
                         Our team is here to help. Reach out anytime.
                     </p>
-                    <a
-                        href="#contact"
+                    <button
+                        onClick={() => setIsContactModalOpen(true)}
                         className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)]"
                     >
-                        Contact Us
+                        Email Us
                         <Icon icon="solar:arrow-right-linear" className="text-base" />
-                    </a>
+                    </button>
                 </motion.div>
             </div>
+
+            <ContactModal
+                isOpen={isContactModalOpen}
+                onClose={() => setIsContactModalOpen(false)}
+            />
         </section>
     );
 };

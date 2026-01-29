@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { cn } from '../utils/cn';
+import { cn } from '../utils';
+import { GradientBeamButton } from './GradientBeamButton';
 
 export const Header = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -32,9 +33,9 @@ export const Header = () => {
                     <a href="#contact" className="hover:text-blue-400 transition-colors">Contact</a>
                 </div>
                 <div className="flex items-center gap-4">
-                    <a href="#platforms" className="bg-white text-black px-5 py-2 rounded-full text-xs font-semibold hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                    <GradientBeamButton href="#platforms">
                         Get Started Free
-                    </a>
+                    </GradientBeamButton>
                 </div>
             </div>
         </motion.nav>
