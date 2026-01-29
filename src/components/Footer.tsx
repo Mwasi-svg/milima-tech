@@ -28,13 +28,13 @@ export const Footer = () => {
                             </a>
                         </div>
                         <div className="flex gap-4 mt-8">
-                            <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-slate-500 hover:text-white hover:border-white/20 hover:bg-white/5 transition-all">
+                            <a href="https://www.instagram.com/accounts/login/?hl=en" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-slate-500 hover:text-white hover:border-white/20 hover:bg-white/5 transition-all">
                                 <Icon icon="ri:instagram-line" className="text-xl" />
                             </a>
-                            <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-slate-500 hover:text-white hover:border-white/20 hover:bg-white/5 transition-all">
+                            <a href="https://x.com/" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-slate-500 hover:text-white hover:border-white/20 hover:bg-white/5 transition-all">
                                 <Icon icon="ri:twitter-x-fill" className="text-xl" />
                             </a>
-                            <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-slate-500 hover:text-white hover:border-white/20 hover:bg-white/5 transition-all">
+                            <a href="https://www.facebook.com/" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-slate-500 hover:text-white hover:border-white/20 hover:bg-white/5 transition-all">
                                 <Icon icon="ri:facebook-fill" className="text-xl" />
                             </a>
                         </div>
