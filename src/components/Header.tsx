@@ -52,7 +52,7 @@ export const Header = () => {
                     {/* brand logo */}
                     <div className="flex items-center gap-3">
                         <div className="h-7 sm:h-8 w-auto flex items-center justify-center">
-                            <img src="/logo.png" alt="Blitz Logo" className="h-full w-auto object-contain" />
+                            <img src="/images/logo.png" alt="Blitz Logo" className="h-full w-auto object-contain" />
                         </div>
                     </div>
 

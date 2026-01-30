@@ -161,7 +161,7 @@ export const Features = () => {
                     <Card className="sm:col-span-2 lg:col-span-2 bg-gradient-to-br from-white/5 to-transparent">
                         <div className="flex flex-col h-full">
                             <div className="w-16 h-13 mb-6 flex items-center justify-center">
-                                <img src="/anonymous.svg?v=2" alt="Anonymous Profiles" className="w-full h-full object-contain" />
+                                <img src="/images/anonymous.svg?v=2" alt="Anonymous Profiles" className="w-full h-full object-contain" />
                             </div>
                             <h3 className="text-2xl font-medium text-white mb-3">Anonymous Profiles</h3>
                             <p className="text-slate-400 max-w-lg mb-8 leading-relaxed">
@@ -189,7 +189,7 @@ export const Features = () => {
                     <Card className="sm:col-span-1 lg:col-span-1">
                         <div className="flex flex-col h-full">
                             <div className="w-16 h-12 mb-6 flex items-center justify-center">
-                                <img src="/message.svg?v=2" alt="Instant Messaging" className="w-full h-full object-contain" />
+                                <img src="/images/message.svg?v=2" alt="Instant Messaging" className="w-full h-full object-contain" />
                             </div>
                             <h3 className="text-xl font-medium text-white mb-3">Instant Messaging</h3>
                             <p className="text-slate-400 text-sm leading-relaxed mb-6">
@@ -203,7 +203,7 @@ export const Features = () => {
                     <Card className="sm:col-span-1 lg:col-span-1">
                         <div className="flex flex-col h-full">
                             <div className="w-16 h-16 mb-6 flex items-center justify-center">
-                                <img src="/mobile.svg?v=2" alt="Protected Mobile App" className="w-full h-full object-contain" />
+                                <img src="/images/mobile.svg?v=2" alt="Protected Mobile App" className="w-full h-full object-contain" />
                             </div>
                             <h3 className="text-xl font-medium text-white mb-3">Protected Mobile App</h3>
                             <p className="text-slate-400 text-sm leading-relaxed">
@@ -216,7 +216,7 @@ export const Features = () => {
                     <Card className="sm:col-span-1 lg:col-span-1">
                         <div className="flex flex-col h-full">
                             <div className="w-16 h-16 mb-6 flex items-center justify-center">
-                                <img src="/encrypt.svg?v=2" alt="End-to-End Encryption" className="w-full h-full object-contain" />
+                                <img src="/images/encrypt.svg?v=2" alt="End-to-End Encryption" className="w-full h-full object-contain" />
                             </div>
                             <h3 className="text-xl font-medium text-white mb-3">End-to-End Encryption</h3>
                             <p className="text-slate-400 text-sm leading-relaxed">
@@ -229,7 +229,7 @@ export const Features = () => {
                     <Card className="sm:col-span-1 lg:col-span-1">
                         <div className="flex flex-col h-full">
                             <div className="w-16 h-16 mb-6 flex items-center justify-center">
-                                <img src="/server.svg?v=2" alt="Data Sovereignty" className="w-full h-full object-contain" />
+                                <img src="/images/server.svg?v=2" alt="Data Sovereignty" className="w-full h-full object-contain" />
                             </div>
                             <h3 className="text-xl font-medium text-white mb-3">Data Sovereignty</h3>
                             <p className="text-slate-400 text-sm leading-relaxed">

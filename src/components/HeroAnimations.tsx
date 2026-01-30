@@ -441,7 +441,7 @@ export const MobileAppAnimation = () => {
             >
                 <div className="relative w-full max-w-[320px] h-full flex items-center justify-center">
                     <img
-                        src="/device_template.png"
+                        src="/images/device_template.png"
                         alt="Mobile App"
                         className="max-h-full w-auto object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
                     />

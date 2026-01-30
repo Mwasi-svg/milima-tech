@@ -61,7 +61,7 @@ export const Hero = () => {
                 {/* hero texture/image overlay */}
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.43] mix-blend-screen scale-105"
-                    style={{ backgroundImage: 'url("/hero.png")' }}
+                    style={{ backgroundImage: 'url("/images/hero.png")' }}
                 ></div>
 
                 {/* soft edge fading */}
@@ -166,7 +166,7 @@ export const Hero = () => {
                             ) : slides[activeSlide].visual === 'security' ? (
                                 <div className="relative w-full h-full flex items-center justify-center p-4">
                                     <img
-                                        src="/privacy.png"
+                                        src="/images/privacy.png"
                                         alt="Privacy Protection"
                                         className="w-full max-w-4xl aspect-square object-contain scale-125 lg:scale-150 transition-transform duration-700"
                                     />

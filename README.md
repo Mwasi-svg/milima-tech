@@ -95,5 +95,5 @@ The `HomePage.tsx` is just a coordinator that pulls in individual sections from 
 
 ### Tech Stack / Styling
 - **Tailwind CSS**: For all the styling. Global tokens (like colors and blur effects) live in `src/index.css`.
-- **Framer Motion**: For animations (fades, slides, and the springy feel of the modals).
+- **Framer Motion**: For animations (fades, slides of the modals).
 - **Iconify**: For icons without bloating the project with SVG files.
